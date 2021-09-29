@@ -76,7 +76,6 @@ public class Share {
                 Uri uri = ShareUtils.getUriForFile(context, f);
                 uriList.add(uri);
             }
-            text/x-vcard
 
             if ("image".equals(type)) {
                 shareIntent.setType("image/*");
