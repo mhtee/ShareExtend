@@ -76,6 +76,7 @@ public class Share {
                 Uri uri = ShareUtils.getUriForFile(context, f);
                 uriList.add(uri);
             }
+            text/x-vcard
 
             if ("image".equals(type)) {
                 shareIntent.setType("image/*");
@@ -83,6 +84,8 @@ public class Share {
                 shareIntent.setType("video/*");
             } else if ("audio".equals(type)) {
                 shareIntent.setType("audio/*");
+            } else if ("vcard".equals(type)) {
+                shareIntent.setType("text/x-vcard");
             } else {
                 shareIntent.setType("application/*");
             }
